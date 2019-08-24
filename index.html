@@ -3,16 +3,17 @@
 <html lang="us-en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/nyt.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
+		<div class="row" id="nytHeader">
+			<div class="col-md-6 title">
 				<h1>NEW YORK TIMES <i><b>API</b></i></h1>
 			</div>
 			<div class="col-md-6">
-				<form id="seachForm" action="/action_page.php">
+				<form id="seachForm" class="nytApiForm" action="/action_page.php">
 					<input id="searchStoryTitle" placeholder="Topic" type="text" name="story-title"><br>
 					<select id="searchStoryCount" name="topResult">
 						<option value="1">Top Result</option>
@@ -26,33 +27,9 @@
 				</form> 
 			</div>
 		</div>
-		<div class="row" id="pageTitle">
-			<div class="col-md-12" id="featured-story">
-				<div class="col-md-4 featured-image" id="featuredImg">
-						<img class="story-image" src="https://via.placeholder.com/600x450" alt="placeholder" />
-				</div>
-				<div class="col-md-6 featured-copy" id="featuredContent">
-						
-				</div>
-			</div>
-		</div>
 		<div class="row" id="cardStories">
-			<div class="col-md-3" id="cardStory">
-				<div class="card" id="card1">
-					<img id="cardStoryImg" class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
-					<h5 id="cardStoryTitle" class="card-header story-title">
-						Card title
-					</h5>
-					<div id="cardStoryBody" class="card-body">
-						<p class="card-text story-copy">
-							Card content
-						</p>
-					</div>
-					<div id="cardStoryLink" class="card-footer story-link">
-						Card footer
-					</div>
-				</div>
-			</div>
+
+			<!-- EVERYTHING BETWEEN THESE COMMENTS WILL BE DYNAMICALLY CREATED VIA JQUERY EACH API DATA RESULT -->
 			<div class="col-md-3">
 				<div class="card">
 					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
@@ -69,52 +46,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="card">
-					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
-					<h5 class="card-header story-title">
-						Card title
-					</h5>
-					<div class="card-body">
-						<p class="card-text story-copy">
-							Card content
-						</p>
-					</div>
-					<div class="card-footer story-link">
-						Card footer
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card">
-					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
-					<h5 class="card-header story-title">
-						Card title
-					</h5>
-					<div class="card-body">
-						<p class="card-text story-copy">
-							Card content
-						</p>
-					</div>
-					<div class="card-footer story-link">
-						Card footer
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
+			<!--- END OF JQUERY GENERATED ELEMENTS -->
 		</div>
 	</div>
 <!--
@@ -123,8 +55,7 @@
 
 
 -->
-
-
+	<script src="assets/js/nyt-js.js"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

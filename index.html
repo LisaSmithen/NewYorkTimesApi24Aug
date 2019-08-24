@@ -1,80 +1,102 @@
 
 <!DOCTYPE html>
 <html lang="us-en">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
+				<h1>NEW YORK TIMES <i><b>API</b></i></h1>
 			</div>
 			<div class="col-md-6">
+				<form action="/action_page.php">
+					<input placeholder="Topic" type="text" name="story-title"><br>
+					<select>
+						<option value="1">Top Result</option>
+						<option value="5">Top 5 Stories</option>
+						<option value="10">Top 10 Stories</option>
+					</select><br>
+					<input placeholder="Start Year" type="text" name="start-year"><br>
+					<input placeholder="End Year" type="text" name="end-year"><br>
+					<input type="submit" value="SEARCH">
+					<input type="reset" value="CLEAR RESULTS">
+				</form> 
 			</div>
 		</div>
 		<div class="row" id="pageTitle">
 			<div class="col-md-12">
-				<h1>NEW YORK TIMES <i><b>API</b></i></h1>
+				<div class="col-md-4 featured-image">
+						<img class="story-image" src="https://via.placeholder.com/600x450" alt="placeholder" />
+				</div>
+				<div class="col-md-6 featured-image">
+						
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
 				<div class="card">
-					<h5 class="card-header">
+					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
+					<h5 class="card-header story-title">
 						Card title
 					</h5>
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text story-copy">
 							Card content
 						</p>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer story-link">
 						Card footer
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="card">
-					<h5 class="card-header">
+					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
+					<h5 class="card-header story-title">
 						Card title
 					</h5>
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text story-copy">
 							Card content
 						</p>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer story-link">
 						Card footer
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="card">
-					<h5 class="card-header">
+					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
+					<h5 class="card-header story-title">
 						Card title
 					</h5>
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text story-copy">
 							Card content
 						</p>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer story-link">
 						Card footer
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="card">
-					<h5 class="card-header">
+					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
+					<h5 class="card-header story-title">
 						Card title
 					</h5>
 					<div class="card-body">
-						<p class="card-text">
+						<p class="card-text story-copy">
 							Card content
 						</p>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer story-link">
 						Card footer
 					</div>
 				</div>

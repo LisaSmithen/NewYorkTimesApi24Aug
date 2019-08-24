@@ -12,43 +12,43 @@
 				<h1>NEW YORK TIMES <i><b>API</b></i></h1>
 			</div>
 			<div class="col-md-6">
-				<form action="/action_page.php">
-					<input placeholder="Topic" type="text" name="story-title"><br>
-					<select>
+				<form id="seachForm" action="/action_page.php">
+					<input id="searchStoryTitle" placeholder="Topic" type="text" name="story-title"><br>
+					<select id="searchStoryCount">
 						<option value="1">Top Result</option>
 						<option value="5">Top 5 Stories</option>
 						<option value="10">Top 10 Stories</option>
 					</select><br>
-					<input placeholder="Start Year" type="text" name="start-year"><br>
-					<input placeholder="End Year" type="text" name="end-year"><br>
-					<input type="submit" value="SEARCH">
-					<input type="reset" value="CLEAR RESULTS">
+					<input id="searchStartYear" placeholder="Start Year" type="text" name="start-year"><br>
+					<input id="searchEndYear" placeholder="End Year" type="text" name="end-year"><br>
+					<input id="searchSubmit" type="submit" value="SEARCH">
+					<input id="searchClear" type="reset" value="CLEAR RESULTS">
 				</form> 
 			</div>
 		</div>
 		<div class="row" id="pageTitle">
-			<div class="col-md-12">
-				<div class="col-md-4 featured-image">
+			<div class="col-md-12" id="featured-story">
+				<div class="col-md-4 featured-image" id="featuredImg">
 						<img class="story-image" src="https://via.placeholder.com/600x450" alt="placeholder" />
 				</div>
-				<div class="col-md-6 featured-image">
+				<div class="col-md-6 featured-copy" id="featuredContent">
 						
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card">
-					<img class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
-					<h5 class="card-header story-title">
+		<div class="row" id="cardStories">
+			<div class="col-md-3" id="cardStory">
+				<div class="card" id="card1">
+					<img id="cardStoryImg" class="story-image" src="https://via.placeholder.com/350x150" alt="placeholder" />
+					<h5 id="cardStoryTitle" class="card-header story-title">
 						Card title
 					</h5>
-					<div class="card-body">
+					<div id="cardStoryBody" class="card-body">
 						<p class="card-text story-copy">
 							Card content
 						</p>
 					</div>
-					<div class="card-footer story-link">
+					<div id="cardStoryLink" class="card-footer story-link">
 						Card footer
 					</div>
 				</div>
@@ -117,6 +117,14 @@
 			</div>
 		</div>
 	</div>
+<!--
+
+	var firstName = document.getElementsByName("firstname")[0].value;
+
+
+-->
+
+
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
